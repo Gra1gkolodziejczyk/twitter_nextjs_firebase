@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body,
-html {
+html, 
+textarea {
   background-color: #15202b;
   color: #ffff;
 }

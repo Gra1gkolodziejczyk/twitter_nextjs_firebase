@@ -34,12 +34,12 @@ const Sidebar = () => {
             src={Profile} 
             height="100" 
             width="100" 
-            alt={""} 
+            alt={""}
             className="h-10 w-10 rounded-full xl:mr-2">
           </Image>
           <div className="leading-5 hidden xl:inline">
             <h4 className='font-bold text-white'>Graig kolodziejczyk</h4>
-            <p className="text-gray-500">@codeGraigKolo</p>
+            <p className="text-gray-500">@GraigCode</p>
           </div>
           <FiMoreHorizontal className="h-5 xl:ml-8 hidden xl:inline"/>
         </div>

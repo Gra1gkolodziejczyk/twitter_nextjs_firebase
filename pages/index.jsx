@@ -1,3 +1,4 @@
+import Feed from "../components/Feed/Feed"
 import Head from "next/head"
 import Sidebar from "../components/Sidebar/Sidebar"
 
@@ -7,8 +8,9 @@ const Home = () => {
       <Head>
         <title>Twitter</title>
       </Head>
-      <main className="flex min-h-screen mx-auto">
+      <main className="flex min-h-screen max-w-7xl mx-auto">
       <Sidebar />
+      <Feed />
       </main>
     </div>
   )
