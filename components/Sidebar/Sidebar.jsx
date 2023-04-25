@@ -13,7 +13,7 @@ import Twitter from '../../assets/twitter-logo.png';
 const Sidebar = () => {
   return (
     <div className="hidden sm:flex flex-col p-1 xl:items-start fixed h-full xl:ml-24">
-        <div className="hoverEffect p-2 hover:bg-blue-100 xl:px-1">
+        <div className="hoverEffect p-2 hover:bg-gray-700 xl:px-1">
             <Image src={Twitter} height="40" width="40" alt={""}></Image>
         </div>
         <div className="mt-4 mb-2.5 xl:items-start">

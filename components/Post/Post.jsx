@@ -21,18 +21,18 @@ const Post = ({ post }) => {
               {post.timestamp}
             </span>
           </div>
-          <FiMoreHorizontal className="h-10 hoverEffect w-10 hover:bg-sky-100 hover:text-sky-500 p-2 " />
+          <FiMoreHorizontal className="h-10 hoverEffect w-10 hover:bg-gray-700 hover:text-sky-500 p-2 " />
         </div>
         <p className="text-gray-800 text-[15px sm:text-[16px] mb-2 text-white">
           {post.text}
         </p>
         <img src={post.img} className="rounded-2xl mr-2" />
         <div className="flex justify-between text-gray-500 p-2">
-          <BiMessageAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-white" />
-          <BsTrash3 className="h-9 w-9 hoverEffect p-2 hover:text-red-500 hover:bg-white" />
-          <AiOutlineHeart className="h-9 w-9 hoverEffect p-2 hover:red-sky-500 hover:bg-red-100" />
-          <BiShareAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-red-100" />
-          <IoMdStats className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-white" />
+          <BiMessageAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-gray-700" />
+          <BsTrash3 className="h-9 w-9 hoverEffect p-2 hover:text-red-500 hover:bg-gray-700" />
+          <AiOutlineHeart className="h-9 w-9 hoverEffect p-2 hover:text-red-500 hover:bg-gray-700" />
+          <BiShareAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-gray-700" />
+          <IoMdStats className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-gray-700" />
         </div>
       </div>
     </div>
