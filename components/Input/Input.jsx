@@ -6,16 +6,16 @@ import React from 'react'
 const Input = () => {
   return (
     <div className="flex border-b border-gray-700 p-3 space-x-3">
-        <Image 
-            src={Profile} 
-            height="100" 
-            width="100" 
-            alt={"user-info"} 
+        <Image
+            src={Profile}
+            height="100"
+            width="100"
+            alt={"user-info"}
             className="h-11 w-11 rounded-full cursor-pointer hover:brightness-95">
           </Image>
         <div className="w-full divide-y divide-gray-700">
             <div>
-                <textarea className="w-full border-none focus:ring-0 text-lg placeholder-gray-500 tracking-wide min-h-[50px] text-white" rows="2" placeholder="What's happening ?"></textarea>
+                <textarea className="w-full border-none focus:ring-0 text-lg placeholder-gray-500 tracking-wide min-h-[50px] text-white" rows="2" placeholder="Qu'est ce qu'il ce passe ?"></textarea>
             </div>
             <div className="flex items-center justify-between pt-2.5 ">
                 <div className="flex">

@@ -1,5 +1,5 @@
-import { BsChatDots, BsTrash } from "react-icons/bs";
-import { BiShareAlt} from 'react-icons/bi';
+import { BsTrash3 } from "react-icons/bs";
+import { BiShareAlt, BiMessageAlt } from 'react-icons/bi';
 
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiMoreHorizontal } from "react-icons/fi";
@@ -28,9 +28,9 @@ const Post = ({ post }) => {
         </p>
         <img src={post.img} className="rounded-2xl mr-2" />
         <div className="flex justify-between text-gray-500 p-2">
-          <BsChatDots className="h-8 w-8 hoverEffect p-2 hover:text-sky-500 hover:bg-white" />
-          <BsTrash className="h-8 w-8 hoverEffect p-2 hover:text-sky-500 hover:bg-white" />
-          <AiOutlineHeart className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-red-100" />
+          <BiMessageAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-white" />
+          <BsTrash3 className="h-9 w-9 hoverEffect p-2 hover:text-red-500 hover:bg-white" />
+          <AiOutlineHeart className="h-9 w-9 hoverEffect p-2 hover:red-sky-500 hover:bg-red-100" />
           <BiShareAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-red-100" />
           <IoMdStats className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-white" />
         </div>
