@@ -1,5 +1,5 @@
 import { BsTrash3 } from "react-icons/bs";
-import { BiShareAlt, BiMessageAlt } from 'react-icons/bi';
+import { BiShareAlt, BiMessageAlt } from "react-icons/bi";
 
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiMoreHorizontal } from "react-icons/fi";
@@ -9,7 +9,10 @@ import React from "react";
 const Post = ({ post }) => {
   return (
     <div className="flex p-3 cursor-pointer border-b border-gray-700">
-      <img src={post.userImg} className="h-11 w-11 rounded-full mr-4" />
+      <img
+        src={post.userImg}
+        className="h-11 w-11 rounded-full mr-4 object-center object-cover"
+      />
       <div className="flex-1">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-1 whitespace-nowrap">
@@ -27,12 +30,23 @@ const Post = ({ post }) => {
           {post.text}
         </p>
         <img src={post.img} className="rounded-2xl mr-2" />
-        <div className="flex justify-between text-gray-500 p-2">
-          <BiMessageAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-gray-700" />
-          <BsTrash3 className="h-9 w-9 hoverEffect p-2 hover:text-red-500 hover:bg-gray-700" />
-          <AiOutlineHeart className="h-9 w-9 hoverEffect p-2 hover:text-red-500 hover:bg-gray-700" />
-          <BiShareAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-gray-700" />
-          <IoMdStats className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-gray-700" />
+        <div className="flex justify-around text-gray-500 p-2">
+          <div className="flex items-center">
+            <BiMessageAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-gray-700" />
+            <p className="pt-2 pb-2">{post.retweet}</p>
+          </div>
+          <div className="flex items-center">
+            <BiShareAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-gray-700" />
+            <p className="pt-2 pb-2">{post.retweet}</p>
+          </div>
+          <div className="flex items-center">
+            <AiOutlineHeart className="h-9 w-9 hoverEffect p-2 hover:text-red-500 hover:bg-gray-700" />
+            <p className="pt-2 pb-2">{post.like}</p>
+          </div>
+          <div className="flex items-center">
+            <IoMdStats className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-gray-700" />
+            <p className="pt-2 pb-2">{post.retweet}</p>
+          </div>
         </div>
       </div>
     </div>

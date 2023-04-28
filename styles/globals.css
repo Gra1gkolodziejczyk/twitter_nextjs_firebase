@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body,
-html, 
+html,
 textarea {
   background-color: #15202b;
   color: #ffff;
@@ -11,6 +11,19 @@ textarea {
 
 @layer components {
   .hoverEffect {
-    @apply cursor-pointer hover:bg-gray-800 rounded-full w-[52px] xl:w-auto h-[52px] xl:h-auto xl:p-3
+    @apply cursor-pointer hover:bg-gray-800 rounded-full w-[52px] xl:w-auto h-[52px] xl:h-auto xl:p-3;
   }
+}
+
+.back {
+  background-color: #15202b;
+  height: 68px;
+}
+
+input[type="text"] {
+  border: hidden;
+  outline: none;
+  outline-offset: 0px;
+  background: transparent;
+  -webkit-focus-ring-color: transparent;
 }
