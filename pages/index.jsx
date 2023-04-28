@@ -13,7 +13,7 @@ export async function getServerSideProps() {
   }
 }
 
-const Home = ({resultNews, randomUserResults }) => {
+const Home = ({ resultNews, randomUserResults }) => {
   return (
     <div>
       <Head>
