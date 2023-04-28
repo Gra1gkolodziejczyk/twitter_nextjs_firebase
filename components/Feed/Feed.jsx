@@ -14,6 +14,10 @@ const Feed = () => {
       img: "https://pbs.twimg.com/media/FrnHITZWcAACaKG?format=jpg&name=small",
       text: "Nice job",
       timestamp: "2 hours ago",
+      reply: "70",
+      retweet: "12",
+      like: "23",
+      view: "14",
     },
     {
       id: "2",
@@ -24,6 +28,10 @@ const Feed = () => {
       img: "https://pbs.twimg.com/media/FsyDuv5XwAEMOep?format=jpg&name=large",
       text: "Nice job!!",
       timestamp: "2 days ago",
+      reply: "70",
+      retweet: "27",
+      like: "50",
+      view: "14",
     },
     {
       id: "3",
@@ -34,6 +42,10 @@ const Feed = () => {
       img: "https://pbs.twimg.com/media/FsteoeCXgAIYGVE?format=jpg&name=small",
       text: "Nice job!!!!",
       timestamp: "2 minutes ago",
+      reply: "70",
+      retweet: "7",
+      like: "10",
+      view: "14",
     },
   ];
   return (
