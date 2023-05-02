@@ -47,6 +47,20 @@ const Feed = () => {
       like: "10",
       view: "14",
     },
+    {
+      id: "4",
+      name: "Graig Kolodziejczyk",
+      username: "GraigCode",
+      userImg:
+        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
+      img: "https://pbs.twimg.com/media/Fu_vBg8WIAEa4PQ?format=jpg&name=small",
+      text: "Deux salles, deux ambiances",
+      timestamp: "2 minutes ago",
+      reply: "70",
+      retweet: "7",
+      like: "10",
+      view: "14",
+    },
   ];
   return (
     <div className="xl:ml-[370px] border-l border-r border-gray-700 xl:min-w-[576px] sm:ml-[73px] flew-grow max-w-xl">
