@@ -17,15 +17,9 @@ const Widgets = ({ resultNews, randomUserResults }) => {
           />
         </div>
       </div>
-
-      {/* <div className="sticky top-2 bg-gray-850 back">
-        <div className="flex items-center p-3 rounded-full h-4">
-          
-        </div>
-      </div> */}
       <div className="text-white space-y-3 bg-gray-800 rounded-xl pt-2 w-[90%] xl:w-[75%]">
         <h4 className="font-bold text-xl px-4">
-          Qu&apos;est-ce qui c&apos;est passé dernierement ?...
+          Qu&apos;est-ce qui c&apos;est passé dernièrement ?
         </h4>
         {resultNews.slice(0, articleNum).map((article) => (
           <News key={article.title} article={article} />
