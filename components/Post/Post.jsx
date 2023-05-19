@@ -1,10 +1,11 @@
+import { React, useState, useEffect } from "react";
+
 import { BsTrash3 } from "react-icons/bs";
 import { BiShareAlt, BiMessageAlt } from "react-icons/bi";
 
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiMoreHorizontal } from "react-icons/fi";
 import { IoMdStats } from "react-icons/io";
-import React from "react";
 
 const Post = ({ post }) => {
   return (
