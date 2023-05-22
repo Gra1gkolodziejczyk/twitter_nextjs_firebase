@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import News from "./News";
 import { BiSearchAlt2 } from "react-icons/bi";
+import News from "./News";
 
-const Widgets = ({ resultNews, randomUserResults }) => {
+function Widgets({ resultNews, randomUserResults }) {
   const [articleNum, setArticleNum] = useState(3);
   const [randomUserNum, setRandomUserNum] = useState(3);
   return (
@@ -49,7 +49,7 @@ const Widgets = ({ resultNews, randomUserResults }) => {
                 {ramdomUser.login.username}
               </h4>
               <h5 className="text-[14px] text-gray-500 truncate">
-                {ramdomUser.name.first + " " + ramdomUser.name.last}
+                {`${ramdomUser.name.first} ${ramdomUser.name.last}`}
               </h5>
             </div>
             <button className="ml-auto bg-blue-500 text-white rounded-full text-sm px-3.5 py-1.5 font-bold hover:bg-blue-600">
@@ -66,6 +66,6 @@ const Widgets = ({ resultNews, randomUserResults }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Widgets;

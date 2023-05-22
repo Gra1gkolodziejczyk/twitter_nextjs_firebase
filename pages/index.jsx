@@ -1,10 +1,11 @@
-import { React, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import Feed from "../components/Feed/Feed";
 import Head from "next/head";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Widgets from "../components/Widgets/Widgets";
 import { Player } from "@lottiefiles/react-lottie-player";
+import Login from "./user/login/index";
 
 export async function getServerSideProps() {
   const resultNews = await fetch(
@@ -22,6 +23,7 @@ export async function getServerSideProps() {
 }
 
 const Home = ({ resultNews, randomUserResults }) => {
+  const [isLogin, setIsLogin] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -54,12 +56,13 @@ const Home = ({ resultNews, randomUserResults }) => {
         </div>
       ) : (
         <main className="flex min-h-screen mx-auto">
-          <Sidebar />
-          <Feed />
-          <Widgets
-            resultNews={resultNews.articles}
-            randomUserResults={randomUserResults.results}
-          />
+          {/*<Sidebar />*/}
+          {/*<Feed />*/}
+          {/*<Widgets*/}
+          {/*  resultNews={resultNews.articles}*/}
+          {/*  randomUserResults={randomUserResults.results}*/}
+          {/*/>*/}
+          <Login />
         </main>
       )}
     </div>
