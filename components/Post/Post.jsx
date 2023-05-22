@@ -1,10 +1,8 @@
-import { BsTrash3 } from "react-icons/bs";
 import { BiShareAlt, BiMessageAlt } from "react-icons/bi";
 
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiMoreHorizontal } from "react-icons/fi";
 import { IoMdStats } from "react-icons/io";
-import React from "react";
 
 const Post = ({ post }) => {
   return (
@@ -12,6 +10,7 @@ const Post = ({ post }) => {
       <img
         src={post.userImg}
         className="h-11 w-11 rounded-full mr-4 object-center object-cover"
+        alt=""
       />
       <div className="flex-1">
         <div className="flex items-center justify-between">
@@ -29,7 +28,7 @@ const Post = ({ post }) => {
         <p className="text-gray-800 text-[15px sm:text-[16px] mb-2 text-white">
           {post.text}
         </p>
-        <img src={post.img} className="rounded-2xl mr-2" />
+        <img src={post.img} className="rounded-2xl mr-2" alt=""/>
         <div className="flex justify-around text-gray-500 p-2">
           <div className="flex items-center">
             <BiMessageAlt className="h-9 w-9 hoverEffect p-2 hover:text-sky-500 hover:bg-gray-700" />
